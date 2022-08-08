@@ -11,11 +11,11 @@ namespace Server.Controllers
 {
     [Route("scores")]
     [ApiController]
-    public class ScoresRepository : ControllerBase
+    public class ScoresController : ControllerBase
     {
         private readonly IScoresRepository _scoresRepository;
 
-        public ScoresRepository(IScoresRepository scoresRepository)
+        public ScoresController(IScoresRepository scoresRepository)
         {
             _scoresRepository = scoresRepository;
         }
